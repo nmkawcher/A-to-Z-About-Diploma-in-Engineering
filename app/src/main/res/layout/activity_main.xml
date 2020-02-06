@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/itro1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="45sp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_style"
+                android:onClick="introbtn"
+                android:text=" ভূমিকা"
+                android:textColor="#ffff"
+                android:textSize="29sp" />
+
+            <Button
+                android:id="@+id/whatisdiploma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_style"
+                android:onClick="whatisdip"
+                android:padding="15dp"
+                android:text="ডিপ্লোমা ইঞ্জিনিয়ারিং কি?"
+                android:textColor="#ffff"
+
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/whydiploma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_style"
+                android:onClick="whydiploma"
+                android:text="ডিপ্লোমা ইঞ্জিনিয়ারিং কেন পড়বেন"
+                android:textColor="#ffff"
+                android:textSize="25sp"
+
+                />
+
+            <Button
+                android:id="@+id/whichbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_style"
+                android:onClick="whichinstitute"
+                android:text="যে প্রতিষ্ঠানে পড়ানো হয়"
+                android:textColor="#ffff"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/subbtnid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_style"
+                android:onClick="subjectonc"
+                android:text="যে বিষয়ে পড়তে পারেন"
+                android:textColor="#ffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/addmisinforid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_style"
+                android:onClick="admisoninforonclk"
+                android:text="ভর্তি সংক্রান্ত তথ্যাদি"
+                android:textColor="#ffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/costid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_style"
+                android:onClick="costonclk"
+                android:text="পড়াশোনার খরচ"
+                android:textColor="#ffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/higerstudyid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_style"
+                android:onClick="higherstudyonclk"
+                android:text="উচ্চশিক্ষার সুযোগ"
+                android:textColor="#ffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_style"
+                android:onClick="aboutonclk"
+                android:text="পরিশেষ"
+                android:textColor="#ffff"
+                android:textSize="25sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>
